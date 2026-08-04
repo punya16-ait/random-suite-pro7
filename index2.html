@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Random Number SuitePro</title>
+    <!-- Apple Touch Icon for iPad Home Screen -->
+    <link rel="apple-touch-icon" href="data:image/png;base64,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">
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #62a3ed;
+            font-family: 'Comic Sans MS', 'Chalkboard', 'Comic Neue', cursive, sans-serif;
+            touch-action: manipulation;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        #appContainer {
+            position: absolute;
+            width: 1200px;
+            height: 750px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transform-origin: center center;
+            background-color: #62a3ed;
+            background-image: 
+                radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.4) 0%, transparent 60%),
+                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 50% 110%, rgba(231, 76, 60, 0.25) 0%, rgba(231, 76, 60, 0.25) 22%, transparent 22.5%),
+                radial-gradient(circle at 50% 110%, rgba(230, 126, 34, 0.25) 0%, rgba(230, 126, 34, 0.25) 27%, transparent 27.5%),
+                radial-gradient(circle at 50% 110%, rgba(241, 196, 15, 0.25) 0%, rgba(241, 196, 15, 0.25) 32%, transparent 32.5%),
+                radial-gradient(circle at 50% 110%, rgba(46, 204, 113, 0.25) 0%, rgba(241, 196, 15, 0.25) 37%, transparent 37.5%),
+                radial-gradient(circle at 50% 110%, rgba(52, 152, 219, 0.25) 0%, rgba(52, 152, 219, 0.25) 42%, transparent 42.5%),
+                radial-gradient(circle at 50% 110%, rgba(155, 89, 182, 0.25) 0%, rgba(155, 89, 182, 0.25) 47%, transparent 47.5%),
+                linear-gradient(135deg, #74b9ff, #0984e3);
+            background-size: 100% 100%;
+            color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #mainMenuPage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            padding: 10px 20px;
+            z-index: 10;
+        }
+
+        .menu-header-icons {
+            position: absolute;
+            top: 25px;
+            left: 35px;
+            right: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .lang-flags {
+            display: flex;
+            gap: 10px;
+            font-size: 24px;
+        }
+
+        .promo-banner {
+            background: linear-gradient(90deg, #f39c12, #f1c40f, #f39c12);
+            color: #2c3e50;
+            padding: 5px 22px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 2px;
+            border: 2px solid #fff;
+        }
+
+        .logo-container {
+            position: relative;
+            margin-bottom: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: scale(1.35);
+        }
+
+        .logo-top-row {
+            font-size: 44px;
+            font-weight: 900;
+            color: #d2a6e8;
+            text-shadow: 2px 2px 0px #7b529e, 4px 4px 8px rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo-ball-7 {
+            width: 52px;
+            height: 52px;
+            background: radial-gradient(circle at 35% 35%, #ffffff 0%, #f1c40f 60%, #b7950b 100%);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset -3px -3px 6px rgba(0,0,0,0.5), 2px 3px 6px rgba(0,0,0,0.4);
+            margin: 0 -4px;
+        }
+        .logo-ball-7-inner {
+            width: 30px;
+            height: 30px;
+            background: #ffffff;
+            border: 1.5px solid #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 900;
+            color: #111;
+        }
+
+        .logo-bottom-row {
+            position: relative;
+            display: inline-block;
+            margin-top: -15px;
+            left: 65px;
+        }
+        .logo-suite-text {
+            font-size: 46px;
+            font-style: italic;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .logo-ball-8 {
+            position: absolute;
+            right: -60px;
+            bottom: 5px;
+            width: 56px;
+            height: 56px;
+            background: radial-gradient(circle at 35% 35%, #ff6b6b 0%, #c0392b 60%, #641e16 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset -3px -3px 6px rgba(0,0,0,0.6), 3px 4px 8px rgba(0,0,0,0.5);
+            transform: rotate(15deg);
+        }
+        .logo-ball-8-inner {
+            width: 28px;
+            height: 28px;
+            background: #ffffff;
+            border: 1.5px solid #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 900;
+            color: #111;
+        }
+
+        .menu-cat-decoration {
+            position: absolute;
+            left: -115px;
+            top: 15px;
+            width: 90px;
+            height: 90px;
+            animation: floatCat 2s ease-in-out infinite;
+            filter: drop-shadow(0 6px 15px rgba(0,0,0,0.3));
+        }
+
+        .menu-subtitle {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 500px;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .menu-mask-toggle {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2c3e50;
+            border: 2px solid #f1c40f;
+            color: #f1c40f;
+            padding: 10px 24px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            z-index: 250;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .menu-mask-toggle:hover {
+            background-color: #f1c40f;
+            color: #2c3e50;
+        }
+        .menu-mask-toggle.active {
+            background-color: #e74c3c;
+            border-color: #fff;
+            color: white;
+        }
+
+        .menu-grid-custom {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px 50px;
+            max-width: 1050px;
+            width: 100%;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .menu-card {
+            background: transparent;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            color: white;
+            width: 300px;
+            height: 165px;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-6px) scale(1.08);
+        }
+
+        .menu-card-title {
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            white-space: nowrap;
+        }
+
+        .icon-preview-box {
+            position: relative;
+            width: 180px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: scale(1.2);
+        }
+
+        .wheel-icon {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            background: conic-gradient(#e74c3c 0deg 60deg, #f1c40f 60deg 120deg, #2ecc71 120deg 180deg, #3498db 180deg 240deg, #9b59b6 240deg 300deg, #e67e22 300deg 360deg);
+            border: 3.5px solid white;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            position: relative;
+        }
+        .wheel-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 14px; height: 14px;
+            background: white;
+            border-radius: 50%;
+            border: 2px solid #333;
+        }
+
+        .single-ball-icon {
+            width: 68px;
+            height: 68px;
+            background: radial-gradient(circle at 35% 35%, #ffffff 0%, #192a56 70%, #0c142b 100%);
+            border-radius: 50%;
+            border: 3.5px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+        }
+
+        .multi-board-icon {
+            width: 125px;
+            height: 68px;
+            background: #192a56;
+            border-radius: 8px;
+            border: 3px solid white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            padding: 5px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+        }
+        .mb-cell {
+            background: #273c75;
+            border-radius: 2px;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .custom-bingo-board {
+            width: 82px;
+            height: 65px;
+            background: #192a56;
+            border-radius: 7px;
+            border: 2.5px solid #273c75;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            padding: 3px;
+            transform: rotate(-8deg);
+            position: absolute;
+            top: 2px; left: 18px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+        .c-cell {
+            background: #273c75;
+            border-radius: 2px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #dcdde1;
+        }
+        .c-cell.marked { background: #e74c3c; color: white; font-weight: bold; }
+
+        .custom-ball {
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            box-shadow: inset -2px -2px 5px rgba(0,0,0,0.6), 2px 4px 8px rgba(0,0,0,0.5);
+        }
+        .cb-inner {
+            background: #ffffff;
+            border: 1.5px solid #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ball-green { width: 40px; height: 40px; background: #2ecc71; bottom: -4px; left: 35px; z-index: 5; }
+        .ball-green .cb-inner { width: 25px; height: 25px; font-size: 11px; }
+        .ball-purple { width: 32px; height: 32px; background: #9b59b6; bottom: -6px; right: 36px; z-index: 4; }
+        .ball-purple .cb-inner { width: 20px; height: 20px; font-size: 9px; }
+
+        .custom-lottery-cage {
+            width: 76px; height: 76px;
+            background: radial-gradient(circle at 35% 35%, rgba(120, 150, 180, 0.5) 0%, rgba(15, 30, 50, 0.9) 80%);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            position: absolute; top: -2px; left: 45px;
+            box-shadow: inset 0 0 12px rgba(0,0,0,0.7), 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .ball-cyan { width: 26px; height: 26px; background: #00cec9; bottom: 2px; left: 20px; z-index: 4; }
+        .ball-cyan .cb-inner { width: 16px; height: 16px; font-size: 8px; }
+        .ball-red { width: 42px; height: 42px; background: #e74c3c; bottom: -4px; left: 56px; z-index: 6; }
+        .ball-red .cb-inner { width: 26px; height: 26px; font-size: 13px; font-weight: bold; }
+        .ball-green-small { width: 32px; height: 32px; background: #2ecc71; bottom: 2px; left: 95px; z-index: 5; }
+        .ball-green-small .cb-inner { width: 20px; height: 20px; font-size: 9px; }
+
+        .menu-range-text {
+            font-size: 15px;
+            font-weight: bold;
+            color: #f1c40f;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+            margin-top: 2px;
+        }
+
+        .app-page {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0; left: 0;
+        }
+
+        .header-bar {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            height: 50px;
+            z-index: 150;
+        }
+
+        .app-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #f1c40f;
+            margin-left: 20px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 12px;
+            right: 65px;
+            background-color: #e74c3c;
+            color: white;
+            border: 2px solid #fff;
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 250;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .close-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .layout1-container {
+            position: absolute;
+            top: 20px; left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .bingo-master-board {
+            background: #2c3e50;
+            border-radius: 12px;
+            padding: 10px;
+            width: 330px;
+            max-height: 460px;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 4px;
+            border: 2px solid #34495e;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+            transition: opacity 0.3s;
+        }
+
+        .layout1-slider-box {
+            background: transparent;
+            padding: 4px 8px;
+            width: 320px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: opacity 0.3s;
+        }
+
+        .board-number {
+            width: 27px; height: 27px;
+            background: #ffffff;
+            border: 1px solid #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: #111;
+            font-weight: 900;
+        }
+        .board-number.drawn {
+            background: #e74c3c !important;
+            color: white !important;
+        }
+
+        .fullscreen-ball-area {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            transition: opacity 0.3s;
+        }
+
+        .lucky-cat-box-layout1 {
+            position: absolute;
+            top: 40px; left: 85px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            z-index: 150;
+            animation: floatCat 2s ease-in-out infinite;
+            filter: drop-shadow(0 12px 25px rgba(0,0,0,0.5));
+        }
+        .lucky-cat-box-layout1 svg {
+            width: 200px;
+            height: 200px;
+        }
+        .lucky-cat-box-layout1 .lucky-cat-text {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            background: rgba(231, 76, 60, 0.9);
+            padding: 4px 16px;
+            border-radius: 14px;
+            margin-top: -10px;
+            border: 2px solid #fff;
+        }
+
+        body.hide-ui-layout1 .lucky-cat-box-layout1 {
+            display: flex;
+        }
+
+        .lucky-cat-box-layout2 {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            z-index: 25;
+            animation: floatCat2 2s ease-in-out infinite;
+            filter: drop-shadow(0 12px 25px rgba(0,0,0,0.5));
+        }
+        .lucky-cat-box-layout2 svg {
+            width: 260px;
+            height: 260px;
+        }
+        .lucky-cat-box-layout2 .lucky-cat-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            background: rgba(231, 76, 60, 0.9);
+            padding: 4px 16px;
+            border-radius: 14px;
+            margin-top: -5px;
+            border: 2px solid #fff;
+        }
+
+        body.hide-ui-layout2 .lucky-cat-box-layout2 {
+            display: flex;
+        }
+
+        .lucky-arm {
+            transform-origin: 153px 105px;
+            animation: waveArm 0.8s ease-in-out infinite alternate;
+        }
+        @keyframes waveArm {
+            0% { transform: rotate(5deg); }
+            100% { transform: rotate(-35deg); }
+        }
+        @keyframes floatCat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        @keyframes floatCat2 {
+            0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+            50% { transform: translate(-50%, -50%) translateY(-8px); }
+        }
+
+        .cage-container {
+            display: none;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .bingo-cage {
+            width: 480px; height: 480px;
+            background: radial-gradient(circle at 35% 35%, rgba(100, 130, 160, 0.4) 0%, rgba(15, 30, 50, 0.85) 80%);
+            border: 8px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 0 50px rgba(0,0,0,0.8), 0 12px 35px rgba(0,0,0,0.5);
+            transition: opacity 0.3s;
+        }
+
+        .cage-ball-area {
+            width: 100%; height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .floating-ball {
+            position: absolute;
+            width: 75px; height: 75px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            color: #111;
+            box-shadow: inset -6px -6px 12px rgba(0,0,0,0.5), 3px 4px 10px rgba(0,0,0,0.4);
+            will-change: transform;
+            transition: opacity 0.3s;
+        }
+        body.hide-ui-layout2 .cage-ball-area .floating-ball {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .ball-inner {
+            width: 46px; height: 46px;
+            background: #ffffff;
+            border: 2.5px solid #222;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 900;
+        }
+        
+        .ball-set-0 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #2ecc71 60%, #1e8449 100%); }
+        .ball-set-1 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #3498db 60%, #1b4f72 100%); }
+        .ball-set-2 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #9b59b6 60%, #6c3483 100%); }
+        .ball-set-3 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e74c3c 60%, #922b21 100%); }
+        .ball-set-4 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e67e22 60%, #b9770e 100%); }
+        .ball-set-5 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #f1c40f 60%, #d4ac0d 100%); }
+        .ball-set-6 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #1abc9c 60%, #117a65 100%); }
+        .ball-set-7 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e91e63 60%, #880e4f 100%); }
+        .ball-set-8 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #34495e 60%, #1c2833 100%); color: white !important; }
+        .ball-set-9 { background: radial-gradient(circle at 35% 35%, #ffffff 0%, #d35400 60%, #7e5109 100%); color: white !important; }
+
+        .latest-ball-display {
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .main-ball-center {
+            width: 240px; height: 240px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+            animation: bounceIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .main-ball-center-inner {
+            width: 155px; height: 155px;
+            background: #ffffff;
+            border: 6px solid #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 85px;
+            font-weight: 900;
+            color: #111;
+            box-shadow: inset 4px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .right-display-panel {
+            display: none;
+            position: absolute;
+            right: 60px; top: 50%;
+            transform: translateY(-50%);
+            flex-direction: column;
+            align-items: center;
+            z-index: 20;
+        }
+        .main-ball-right {
+            width: 180px; height: 180px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .main-ball-right-inner {
+            width: 120px; height: 120px;
+            background: #ffffff;
+            border: 5px solid #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+            font-weight: 900;
+            color: #111;
+            box-shadow: inset 3px 3px 8px rgba(0,0,0,0.3);
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            70% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        .stealth-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background-color: #f1c40f;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            display: inline-block;
+        }
+        .stealth-dot:hover { transform: scale(1.5); }
+        .stealth-dot.active {
+            transform: scale(1.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 5px #f1c40f;
+        }
+        .stealth-dot.active::after {
+            content: '';
+            width: 2.5px; height: 2.5px;
+            background-color: #e74c3c; 
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .dots-set-1 { position: absolute; top: 4px; left: 15px; display: flex; gap: 3px; z-index: 200; }
+        .dots-set-2 { position: absolute; top: 4px; left: 50%; transform: translateX(-50%); display: flex; gap: 3px; z-index: 200; }
+        .dots-set-3 { position: absolute; top: 4px; right: 15px; display: flex; gap: 3px; z-index: 200; }
+        .dots-set-4 { position: absolute; bottom: 2px; left: 15px; display: flex; gap: 3px; z-index: 200; }
+        .dots-set-5 { position: absolute; bottom: 2px; right: 15px; display: flex; gap: 3px; z-index: 200; }
+
+        .control-bar {
+            background: rgba(0, 0, 0, 0.3);
+            height: 100px;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            justify-content: flex-start;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            z-index: 150;
+            gap: 20px;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: opacity 0.3s;
+        }
+
+        .reset-btn {
+            background-color: #8e44ad;
+            width: 44px; height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+        }
+        .reset-btn svg { fill: white; width: 22px; height: 22px; }
+
+        .counter-box {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 6px 14px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .counter-label { font-size: 9px; opacity: 0.7; text-transform: uppercase; }
+        .counter-value { font-size: 18px; font-weight: bold; color: #f1c40f; }
+
+        .slider-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            width: 250px;
+            padding-top: 24px;
+            transition: opacity 0.3s;
+        }
+        .range-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+        }
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 42px; height: 42px;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .slider-ball-thumb {
+            position: absolute;
+            top: 2px; left: 50%;
+            width: 42px; height: 42px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 2px solid #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #111;
+            pointer-events: none;
+            transform: translateX(-50%);
+            transition: left 0.05s ease-out;
+        }
+
+        .slider-label-text {
+            font-size: 9px;
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 4px;
+            white-space: nowrap;
+        }
+
+        body.hide-ui-layout1 .bingo-master-board,
+        body.hide-ui-layout1 .fullscreen-ball-area,
+        body.hide-ui-layout1 .control-group,
+        body.hide-ui-layout1 .footer-disclaimer,
+        body.hide-ui-layout1 .history-container {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+        }
+
+        body.hide-ui-layout2 .bingo-master-board,
+        body.hide-ui-layout2 .fullscreen-ball-area,
+        body.hide-ui-layout2 .control-group,
+        body.hide-ui-layout2 .footer-disclaimer,
+        body.hide-ui-layout2 .history-container {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+        }
+
+        .mask-toggle-btn {
+            background-color: #2c3e50;
+            border: 2px solid #f1c40f;
+            color: #f1c40f;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            z-index: 250;
+        }
+        .mask-toggle-btn:hover {
+            background-color: #f1c40f;
+            color: #2c3e50;
+        }
+        .mask-toggle-btn.active {
+            background-color: #e74c3c;
+            border-color: #fff;
+            color: white;
+        }
+
+        .history-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 50%; bottom: 25px;
+            transform: translateX(-50%);
+            max-width: 650px;
+            z-index: 160;
+            transition: opacity 0.3s;
+        }
+        .history-label {
+            font-size: 12px;
+            color: #f1c40f;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+        .history-balls-row {
+            background: rgba(0, 0, 0, 0.65);
+            border-radius: 40px;
+            padding: 10px 22px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            height: 75px; width: 480px;
+            justify-content: flex-end;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        }
+        .history-ball {
+            width: 55px; height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 18px;
+            color: #111;
+            flex-shrink: 0;
+        }
+        .history-ball-inner {
+            width: 36px; height: 36px;
+            background: #ffffff;
+            border: 2px solid #222;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .press-btn {
+            position: absolute;
+            right: 175px; bottom: 155px;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            border: 4px solid #fff;
+            width: 110px; height: 110px;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.8);
+            z-index: 250;
+            transition: transform 0.2s;
+        }
+        .press-btn:hover { transform: scale(1.05); }
+
+        .footer-disclaimer {
+            position: absolute;
+            bottom: 4px; left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            z-index: 160;
+            text-align: center;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+        .footer-text {
+            font-size: 8px;
+            color: #f1c40f;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="appContainer">
+        <div class="dots-set-1">
+            <div class="stealth-dot active" id="dot-none" onclick="setTargetRow('none')" title="อิสระ"></div>
+            <script>for(let r=1; r<=5; r++) document.write(`<div class="stealth-dot" id="dot-${r}" onclick="setTargetRow(${r})"></div>`);</script>
+        </div>
+        <div class="dots-set-2"><script>for(let r=6; r<=10; r++) document.write(`<div class="stealth-dot" id="dot-${r}" onclick="setTargetRow(${r})"></div>`);</script></div>
+        <div class="dots-set-3"><script>for(let r=11; r<=15; r++) document.write(`<div class="stealth-dot" id="dot-${r}" onclick="setTargetRow(${r})"></div>`);</script></div>
+        <div class="dots-set-4"><script>for(let r=16; r<=20; r++) document.write(`<div class="stealth-dot" id="dot-${r}" onclick="setTargetRow(${r})"></div>`);</script></div>
+        <div class="dots-set-5"><script>for(let r=21; r<=25; r++) document.write(`<div class="stealth-dot" id="dot-${r}" onclick="setTargetRow(${r})"></div>`);</script></div>
+
+        <div id="mainMenuPage">
+            <div class="menu-header-icons">
+                <button class="icon-btn">⚙️</button>
+                <div class="lang-flags"><span>🇹🇭</span><span>🇬🇧</span></div>
+            </div>
+
+            <button class="menu-mask-toggle" id="menuMaskToggleBtn" onclick="toggleMenuHideUI()">
+                🔦 โหมดซ่อนลูกบอล: ปิด
+            </button>
+
+            <div class="promo-banner">🎉 Welcome to Random SuitePro - Ultimate Number Suite & Bingo Tool! 🌟</div>
+
+            <div class="logo-container">
+                <div class="menu-cat-decoration">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <g class="lucky-arm">
+                            <rect x="135" y="30" width="36" height="80" rx="18" fill="#fff" stroke="#333" stroke-width="5"/>
+                            <line x1="145" y1="35" x2="145" y2="45" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="153" y1="33" x2="153" y2="43" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="161" y1="35" x2="161" y2="45" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        </g>
+                        <polygon points="150,70 145,15 105,45" fill="#fff" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+                        <polygon points="142,60 138,25 115,45" fill="#fbc531"/>
+                        <polygon points="50,70 55,15 95,45" fill="#fff" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+                        <polygon points="58,60 62,25 85,45" fill="#fbc531"/>
+                        <path d="M 45 175 C 45 100, 155 100, 155 175 Z" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <path d="M 45 175 Q 100 190 155 175" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <ellipse cx="100" cy="85" rx="65" ry="55" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <ellipse cx="65" cy="90" rx="8" ry="4" fill="#ff7675" opacity="0.6"/>
+                        <ellipse cx="135" cy="90" rx="8" ry="4" fill="#ff7675" opacity="0.6"/>
+                        <path d="M 65 80 Q 75 65 85 80" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M 115 80 Q 125 65 135 80" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <polygon points="96,93 104,93 100,98" fill="#e74c3c" stroke="#e74c3c" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M 90 102 Q 100 110 110 102" fill="none" stroke="#333" stroke-width="3.5" stroke-linecap="round"/>
+                        <line x1="30" y1="85" x2="50" y2="88" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="25" y1="98" x2="45" y2="98" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="170" y1="85" x2="150" y2="88" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="175" y1="98" x2="155" y2="98" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 55 130 Q 100 180 145 130 Z" fill="#badc58" stroke="#333" stroke-width="4"/>
+                        <rect x="52" y="120" width="96" height="12" rx="6" fill="#ff5252" stroke="#333" stroke-width="4"/>
+                        <circle cx="100" cy="142" r="16" fill="#f1c40f" stroke="#333" stroke-width="4"/>
+                        <line x1="86" y1="137" x2="114" y2="137" stroke="#333" stroke-width="3"/>
+                        <circle cx="100" cy="146" r="3" fill="#333"/>
+                        <line x1="100" y1="146" x2="100" y2="158" stroke="#333" stroke-width="3"/>
+                        <path d="M 45 135 C 20 145, 25 175, 65 165" fill="#fff" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="75" y1="175" x2="75" y2="183" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="85" y1="177" x2="85" y2="184" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="115" y1="177" x2="115" y2="184" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="125" y1="175" x2="125" y2="183" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div class="logo-top-row">
+                    RAND
+                    <div class="logo-ball-7"><div class="logo-ball-7-inner">7</div></div>
+                    M
+                </div>
+                <div class="logo-bottom-row">
+                    <span class="logo-suite-text">SuitePro</span>
+                    <div class="logo-ball-8"><div class="logo-ball-8-inner">8</div></div>
+                </div>
+            </div>
+
+            <div class="menu-subtitle">
+                Click the icon you want to use to find a random number or a set of numbers or even if you want to play a game of bingo / keno
+            </div>
+
+            <div class="menu-grid-custom">
+                <div class="menu-card" onclick="openApp(1)">
+                    <div class="icon-preview-box">
+                        <div class="custom-bingo-board">
+                            <div class="c-cell">1</div><div class="c-cell marked">✕</div><div class="c-cell">7</div>
+                            <div class="c-cell">11</div><div class="c-cell">12</div><div class="c-cell">14</div>
+                        </div>
+                        <div class="custom-ball ball-green"><div class="cb-inner">12</div></div>
+                        <div class="custom-ball ball-purple"><div class="cb-inner">9</div></div>
+                    </div>
+                    <div class="menu-card-title">Bingo and Keno</div>
+                    <div class="menu-range-text">0 - 99</div>
+                </div>
+
+                <div class="menu-card" onclick="openApp(2)">
+                    <div class="icon-preview-box">
+                        <div class="custom-lottery-cage"></div>
+                        <div class="custom-ball ball-cyan"><div class="cb-inner">7</div></div>
+                        <div class="custom-ball ball-red"><div class="cb-inner">2</div></div>
+                        <div class="custom-ball ball-green-small"><div class="cb-inner">34</div></div>
+                    </div>
+                    <div class="menu-card-title">Lottery / Lotto</div>
+                    <div class="menu-range-text">1 - 99</div>
+                </div>
+
+                <div class="menu-card" onclick="openApp(1)">
+                    <div class="icon-preview-box"><div class="wheel-icon"></div></div>
+                    <div class="menu-card-title">Spin The Wheel</div>
+                    <div class="menu-range-text">2 - 12</div>
+                </div>
+
+                <div class="menu-card" onclick="openApp(1)">
+                    <div class="icon-preview-box"><div class="single-ball-icon">54</div></div>
+                    <div class="menu-card-title">Single Random Number</div>
+                    <div class="menu-range-text">0 - 999999</div>
+                </div>
+
+                <div class="menu-card" onclick="openApp(1)">
+                    <div class="icon-preview-box">
+                        <div class="multi-board-icon">
+                            <div class="mb-cell">415</div><div class="mb-cell">243</div><div class="mb-cell">62</div>
+                            <div class="mb-cell">89</div><div class="mb-cell">511</div><div class="mb-cell">4</div>
+                            <div class="mb-cell">2</div><div class="mb-cell">351</div><div class="mb-cell">103</div>
+                        </div>
+                    </div>
+                    <div class="menu-card-title">Multiple Random Numbers</div>
+                    <div class="menu-range-text">0 - 999999</div>
+                </div>
+
+                <div class="menu-card" onclick="openApp(1)">
+                    <div class="icon-preview-box">
+                        <div class="single-ball-icon" style="background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e67e22 70%, #b9770e 100%);">99</div>
+                    </div>
+                    <div class="menu-card-title">Custom Suite</div>
+                    <div class="menu-range-text">0 - 1000</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="appPage" class="app-page">
+            <div class="header-bar">
+                <div class="app-title"><span>🎲 RANDOM SuitePro</span></div>
+                <button class="close-btn" onclick="backToMenu()">✕</button>
+            </div>
+
+            <div class="main-container">
+                <div class="lucky-cat-box-layout1">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <g class="lucky-arm">
+                            <rect x="135" y="30" width="36" height="80" rx="18" fill="#fff" stroke="#333" stroke-width="5"/>
+                            <line x1="145" y1="35" x2="145" y2="45" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="153" y1="33" x2="153" y2="43" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="161" y1="35" x2="161" y2="45" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        </g>
+                        <polygon points="150,70 145,15 105,45" fill="#fff" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+                        <polygon points="142,60 138,25 115,45" fill="#fbc531"/>
+                        <polygon points="50,70 55,15 95,45" fill="#fff" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+                        <polygon points="58,60 62,25 85,45" fill="#fbc531"/>
+                        <path d="M 45 175 C 45 100, 155 100, 155 175 Z" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <path d="M 45 175 Q 100 190 155 175" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <ellipse cx="100" cy="85" rx="65" ry="55" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <ellipse cx="65" cy="90" rx="8" ry="4" fill="#ff7675" opacity="0.6"/>
+                        <ellipse cx="135" cy="90" rx="8" ry="4" fill="#ff7675" opacity="0.6"/>
+                        <path d="M 65 80 Q 75 65 85 80" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M 115 80 Q 125 65 135 80" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <polygon points="96,93 104,93 100,98" fill="#e74c3c" stroke="#e74c3c" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M 90 102 Q 100 110 110 102" fill="none" stroke="#333" stroke-width="3.5" stroke-linecap="round"/>
+                        <line x1="30" y1="85" x2="50" y2="88" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="25" y1="98" x2="45" y2="98" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="170" y1="85" x2="150" y2="88" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="175" y1="98" x2="155" y2="98" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 55 130 Q 100 180 145 130 Z" fill="#badc58" stroke="#333" stroke-width="4"/>
+                        <rect x="52" y="120" width="96" height="12" rx="6" fill="#ff5252" stroke="#333" stroke-width="4"/>
+                        <circle cx="100" cy="142" r="16" fill="#f1c40f" stroke="#333" stroke-width="4"/>
+                        <line x1="86" y1="137" x2="114" y2="137" stroke="#333" stroke-width="3"/>
+                        <circle cx="100" cy="146" r="3" fill="#333"/>
+                        <line x1="100" y1="146" x2="100" y2="158" stroke="#333" stroke-width="3"/>
+                        <path d="M 45 135 C 20 145, 25 175, 65 165" fill="#fff" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="75" y1="175" x2="75" y2="183" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="85" y1="177" x2="85" y2="184" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="115" y1="177" x2="115" y2="184" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="125" y1="175" x2="125" y2="183" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <div class="lucky-cat-text">โชคดีนะ!</div>
+                </div>
+
+                <div class="lucky-cat-box-layout2">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <g class="lucky-arm">
+                            <rect x="135" y="30" width="36" height="80" rx="18" fill="#fff" stroke="#333" stroke-width="5"/>
+                            <line x1="145" y1="35" x2="145" y2="45" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="153" y1="33" x2="153" y2="43" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="161" y1="35" x2="161" y2="45" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        </g>
+                        <polygon points="150,70 145,15 105,45" fill="#fff" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+                        <polygon points="142,60 138,25 115,45" fill="#fbc531"/>
+                        <polygon points="50,70 55,15 95,45" fill="#fff" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+                        <polygon points="58,60 62,25 85,45" fill="#fbc531"/>
+                        <path d="M 45 175 C 45 100, 155 100, 155 175 Z" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <path d="M 45 175 Q 100 190 155 175" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <ellipse cx="100" cy="85" rx="65" ry="55" fill="#fff" stroke="#333" stroke-width="5"/>
+                        <ellipse cx="65" cy="90" rx="8" ry="4" fill="#ff7675" opacity="0.6"/>
+                        <ellipse cx="135" cy="90" rx="8" ry="4" fill="#ff7675" opacity="0.6"/>
+                        <path d="M 65 80 Q 75 65 85 80" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M 115 80 Q 125 65 135 80" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <polygon points="96,93 104,93 100,98" fill="#e74c3c" stroke="#e74c3c" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M 90 102 Q 100 110 110 102" fill="none" stroke="#333" stroke-width="3.5" stroke-linecap="round"/>
+                        <line x1="30" y1="85" x2="50" y2="88" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="25" y1="98" x2="45" y2="98" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="170" y1="85" x2="150" y2="88" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="175" y1="98" x2="155" y2="98" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 55 130 Q 100 180 145 130 Z" fill="#badc58" stroke="#333" stroke-width="4"/>
+                        <rect x="52" y="120" width="96" height="12" rx="6" fill="#ff5252" stroke="#333" stroke-width="4"/>
+                        <circle cx="100" cy="142" r="16" fill="#f1c40f" stroke="#333" stroke-width="4"/>
+                        <line x1="86" y1="137" x2="114" y2="137" stroke="#333" stroke-width="3"/>
+                        <circle cx="100" cy="146" r="3" fill="#333"/>
+                        <line x1="100" y1="146" x2="100" y2="158" stroke="#333" stroke-width="3"/>
+                        <path d="M 45 135 C 20 145, 25 175, 65 165" fill="#fff" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="75" y1="175" x2="75" y2="183" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="85" y1="177" x2="85" y2="184" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="115" y1="177" x2="115" y2="184" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="125" y1="175" x2="125" y2="183" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <div class="lucky-cat-text">โชคดีนะ!</div>
+                </div>
+
+                <div class="layout1-container" id="layout1Container">
+                    <div class="bingo-master-board" id="masterBoard"></div>
+                    <div class="layout1-slider-box" id="sliderBoxTarget">
+                        <div class="slider-wrapper">
+                            <div class="slider-ball-thumb" id="sliderBallThumb1">75</div>
+                            <input type="range" min="50" max="99" value="75" class="range-slider" id="maxNumberSlider1" oninput="updateSliderBall(this.value)">
+                            <div class="slider-label-text">Drag above disc to select how many balls to use</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fullscreen-ball-area" id="fullscreenBallArea"></div>
+
+                <div class="cage-container" id="cageContainer">
+                    <div class="bingo-cage">
+                        <div class="cage-ball-area" id="cageBallArea"></div>
+                    </div>
+                </div>
+
+                <div class="latest-ball-display" id="centerDisplayPanel">
+                    <div class="main-ball-center" id="mainBallCenterBox">
+                        <div class="main-ball-center-inner" id="mainBallCenterDisplay">-</div>
+                    </div>
+                </div>
+
+                <div class="right-display-panel" id="rightDisplayPanel">
+                    <div class="main-ball-right" id="mainBallRightBox">
+                        <div class="main-ball-right-inner" id="mainBallRightDisplay">-</div>
+                    </div>
+                </div>
+
+                <div class="history-container" id="historyContainer">
+                    <div class="history-label">LAST FEW DRAWN BALLS</div>
+                    <div class="history-balls-row" id="historyBallsRow"></div>
+                </div>
+            </div>
+
+            <button class="press-btn" onclick="drawNextBall()">Press</button>
+
+            <div class="control-bar">
+                <div class="control-group">
+                    <button class="reset-btn" onclick="initGame()">
+                        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+                    </button>
+                    <div class="counter-box">
+                        <div class="counter-label">Drawn</div>
+                        <div class="counter-value" id="ballsDrawnCount">0</div>
+                    </div>
+                </div>
+
+                <div class="game-promo-banner" style="margin-top: 0;">🎉 Welcome to Random SuitePro - Ultimate Number Suite & Bingo Tool! 🌟</div>
+
+                <button class="mask-toggle-btn" id="maskToggleBtn" onclick="toggleHideUI()">
+                    🔦 โหมดซ่อนลูกบอล: ปิด
+                </button>
+
+                <div class="slider-wrapper" id="sliderWrapper2" style="display: none;">
+                    <div class="slider-ball-thumb" id="sliderBallThumb2">75</div>
+                    <input type="range" min="50" max="99" value="75" class="range-slider" id="maxNumberSlider2" oninput="updateSliderBall(this.value)">
+                    <div class="slider-label-text">Drag above disc to select how many balls to use</div>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer">
+                <p class="footer-text">If you need numbers for the lottery, or if you need to play bingo or keno, Then this is the app for you!</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function autoScaleApp() {
+        const container = document.getElementById('appContainer');
+        const scale = Math.min(window.innerWidth / 1200, window.innerHeight / 750);
+        container.style.transform = `translate(-50%, -50%) scale(${scale})`;
+    }
+    window.addEventListener('resize', autoScaleApp);
+    window.addEventListener('load', autoScaleApp);
+    setTimeout(autoScaleApp, 50);
+
+    let maxNumber = 75;
+    let remainingBalls = [];
+    let drawnNumbers = [];
+    let activeBalls = [];
+    let animationFrameId = null;
+    let selectedTargetRow = "none";
+    let lastTime = 0;
+    let currentLayout = 1;
+    let lastDrawnFromTarget = -99;
+    let isAnimating = false;
+    let isHideUIActive = false;
+
+    function toggleMenuHideUI() {
+        isHideUIActive = !isHideUIActive;
+        const menuBtn = document.getElementById('menuMaskToggleBtn');
+        const gameBtn = document.getElementById('maskToggleBtn');
+
+        if (isHideUIActive) {
+            menuBtn.classList.add('active');
+            menuBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: เปิด';
+            gameBtn.classList.add('active');
+            gameBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: เปิด';
+        } else {
+            menuBtn.classList.remove('active');
+            menuBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: ปิด';
+            gameBtn.classList.remove('active');
+            gameBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: ปิด';
+        }
+    }
+
+    function toggleHideUI() {
+        isHideUIActive = !isHideUIActive;
+        const menuBtn = document.getElementById('menuMaskToggleBtn');
+        const gameBtn = document.getElementById('maskToggleBtn');
+
+        if (isHideUIActive) {
+            if (currentLayout === 1) {
+                document.body.classList.add('hide-ui-layout1');
+            } else {
+                document.body.classList.add('hide-ui-layout2');
+            }
+            menuBtn.classList.add('active');
+            menuBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: เปิด';
+            gameBtn.classList.add('active');
+            gameBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: เปิด';
+        } else {
+            document.body.classList.remove('hide-ui-layout1');
+            document.body.classList.remove('hide-ui-layout2');
+            menuBtn.classList.remove('active');
+            menuBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: ปิด';
+            gameBtn.classList.remove('active');
+            gameBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: ปิด';
+        }
+    }
+
+    class BouncingBall {
+        constructor(num, container, isCage = false) {
+            this.num = num;
+            this.isCage = isCage;
+            this.element = document.createElement('div');
+            this.element.className = `floating-ball ball-set-${Math.floor((num - 1) / 10) % 10}`;
+            this.element.innerHTML = `<div class="ball-inner">${num}</div>`;
+
+            if (isCage) {
+                const radius = Math.random() * 150;
+                const theta = Math.random() * Math.PI * 2;
+                this.x = 240 + Math.cos(theta) * radius - 37.5;
+                this.y = 240 + Math.sin(theta) * radius - 37.5;
+                const speed = 400 + Math.random() * 100;
+                const angle = Math.random() * Math.PI * 2;
+                this.vx = Math.cos(angle) * speed;
+                this.vy = Math.sin(angle) * speed;
+            } else {
+                this.x = Math.random() * 1000 + 50;
+                this.y = Math.random() * 450 + 50;
+                this.vx = (Math.random() - 0.5) * 1200;
+                this.vy = (Math.random() - 0.5) * 1200;
+            }
+            container.appendChild(this.element);
+        }
+
+        update(dt) {
+            if (this.isCage) {
+                const centerX = 240, centerY = 240, cageRadius = 220, ballRadius = 37.5;
+                this.x += this.vx * dt;
+                this.y += this.vy * dt;
+
+                const dx = (this.x + ballRadius) - centerX;
+                const dy = (this.y + ballRadius) - centerY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist > (cageRadius - ballRadius)) {
+                    const nx = dx / dist, ny = dy / dist;
+                    const dot = this.vx * nx + this.vy * ny;
+                    this.vx = (this.vx - 2 * dot * nx) * 0.98;
+                    this.vy = (this.vy - 2 * dot * ny) * 0.98;
+                    this.x = centerX + nx * (cageRadius - ballRadius) - ballRadius;
+                    this.y = centerY + ny * (cageRadius - ballRadius) - ballRadius;
+                }
+            } else {
+                this.x += this.vx * dt;
+                this.y += this.vy * dt;
+                if (this.x <= 10 || this.x >= 1120) { this.vx *= -1; this.x = Math.max(10, Math.min(1120, this.x)); }
+                if (this.y <= 10 || this.y >= 500) { this.vy *= -1; this.y = Math.max(10, Math.min(500, this.y)); }
+            }
+            this.element.style.transform = `translate3d(${this.x}px, ${this.y}px, 0)`;
+        }
+
+        remove() {
+            if (this.element && this.element.parentNode) {
+                this.element.parentNode.removeChild(this.element);
+            }
+        }
+    }
+
+    function openApp(layoutNum) {
+        document.getElementById('mainMenuPage').style.display = 'none';
+        document.getElementById('appPage').style.display = 'flex';
+        setLayout(layoutNum);
+        updateSliderBall(75);
+        initGame();
+        startLoop();
+
+        const gameBtn = document.getElementById('maskToggleBtn');
+        if (isHideUIActive) {
+            if (layoutNum === 1) {
+                document.body.classList.add('hide-ui-layout1');
+            } else {
+                document.body.classList.add('hide-ui-layout2');
+            }
+            gameBtn.classList.add('active');
+            gameBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: เปิด';
+        } else {
+            document.body.classList.remove('hide-ui-layout1');
+            document.body.classList.remove('hide-ui-layout2');
+            gameBtn.classList.remove('active');
+            gameBtn.innerHTML = '🔦 โหมดซ่อนลูกบอล: ปิด';
+        }
+    }
+
+    function setLayout(layoutNum) {
+        currentLayout = layoutNum;
+        document.getElementById('layout1Container').style.display = (layoutNum === 1) ? 'flex' : 'none';
+        document.getElementById('fullscreenBallArea').style.display = (layoutNum === 1) ? 'block' : 'none';
+        document.getElementById('centerDisplayPanel').style.display = (layoutNum === 1) ? 'flex' : 'none';
+
+        document.getElementById('cageContainer').style.display = (layoutNum === 2) ? 'flex' : 'none';
+        document.getElementById('rightDisplayPanel').style.display = (layoutNum === 2) ? 'flex' : 'none';
+        document.getElementById('historyContainer').style.display = (layoutNum === 2) ? 'flex' : 'none';
+        document.getElementById('sliderWrapper2').style.display = (layoutNum === 2) ? 'flex' : 'none';
+    }
+
+    function backToMenu() {
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        setTargetRow("none");
+        
+        document.body.classList.remove('hide-ui-layout1');
+        document.body.classList.remove('hide-ui-layout2');
+
+        document.getElementById('appPage').style.display = 'none';
+        document.getElementById('mainMenuPage').style.display = 'flex';
+    }
+
+    function setTargetRow(rowVal) {
+        selectedTargetRow = rowVal;
+        document.querySelectorAll('.stealth-dot').forEach(dot => dot.classList.remove('active'));
+        if (rowVal === "none") {
+            document.getElementById('dot-none').classList.add('active');
+        } else {
+            const targetDot = document.getElementById(`dot-${rowVal}`);
+            if (targetDot) targetDot.classList.add('active');
+        }
+        lastDrawnFromTarget = -99;
+    }
+
+    function updateSliderBall(val) {
+        maxNumber = parseInt(val);
+        document.getElementById('maxNumberSlider1').value = maxNumber;
+        document.getElementById('maxNumberSlider2').value = maxNumber;
+
+        const thumb1 = document.getElementById('sliderBallThumb1');
+        const thumb2 = document.getElementById('sliderBallThumb2');
+        thumb1.innerText = maxNumber;
+        thumb2.innerText = maxNumber;
+
+        const s1 = document.getElementById('maxNumberSlider1');
+        const s2 = document.getElementById('maxNumberSlider2');
+        const p1 = (s1.value - s1.min) / (s1.max - s1.min);
+        const p2 = (s2.value - s2.min) / (s2.max - s2.min);
+        thumb1.style.left = `${p1 * (s1.offsetWidth - 42) + 21}px`;
+        thumb2.style.left = `${p2 * (s2.offsetWidth - s2.min) + 21}px`;
+        
+        initGame();
+    }
+
+    function initGame() {
+        remainingBalls = Array.from({length: maxNumber}, (_, i) => i + 1);
+        drawnNumbers = [];
+        lastDrawnFromTarget = -99;
+        document.getElementById('ballsDrawnCount').innerText = '0';
+        document.getElementById('mainBallCenterDisplay').innerText = '-';
+        document.getElementById('mainBallRightDisplay').innerText = '-';
+        document.getElementById('historyBallsRow').innerHTML = '';
+
+        const centerBox = document.getElementById('mainBallCenterBox');
+        const rightBox = document.getElementById('mainBallRightBox');
+        centerBox.className = "main-ball-center";
+        rightBox.className = "main-ball-right";
+
+        const board = document.getElementById('masterBoard');
+        board.innerHTML = '';
+        for (let i = 1; i <= maxNumber; i++) {
+            const numDiv = document.createElement('div');
+            numDiv.className = 'board-number';
+            numDiv.id = `board-num-${i}`;
+            numDiv.innerText = i;
+            board.appendChild(numDiv);
+        }
+
+        if (activeBalls) activeBalls.forEach(b => b.remove());
+        activeBalls = [];
+        const container = (currentLayout === 1) ? document.getElementById('fullscreenBallArea') : document.getElementById('cageBallArea');
+        remainingBalls.forEach(num => {
+            activeBalls.push(new BouncingBall(num, container, currentLayout === 2));
+        });
+    }
+
+    function startLoop() {
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        lastTime = performance.now();
+        function loop(currentTime) {
+            let dt = (currentTime - lastTime) / 1000;
+            if (dt > 0.1) dt = 0.016;
+            lastTime = currentTime;
+            activeBalls.forEach(ball => ball.update(dt));
+            animationFrameId = requestAnimationFrame(loop);
+        }
+        animationFrameId = requestAnimationFrame(loop);
+    }
+
+    function drawNextBall() {
+        if (isAnimating) return;
+        if (remainingBalls.length === 0) return;
+
+        isAnimating = true;
+        let drawnNumber;
+
+        if (selectedTargetRow === "none") {
+            const randomIndex = Math.floor(Math.random() * remainingBalls.length);
+            drawnNumber = remainingBalls[randomIndex];
+        } else {
+            let r = parseInt(selectedTargetRow);
+            let targetGroup = [r, r + 25, r + 50].filter(n => n <= maxNumber);
+            let remainingInTarget = targetGroup.filter(num => remainingBalls.includes(num));
+            let turnsSinceLastTarget = drawnNumbers.length - lastDrawnFromTarget;
+
+            if (remainingInTarget.length > 0 && turnsSinceLastTarget >= 2 && Math.random() < 0.4) {
+                drawnNumber = remainingInTarget[Math.floor(Math.random() * remainingInTarget.length)];
+                lastDrawnFromTarget = drawnNumbers.length;
+            } else {
+                let randomIndex = Math.floor(Math.random() * remainingBalls.length);
+                drawnNumber = remainingBalls[randomIndex];
+                if (targetGroup.includes(drawnNumber)) lastDrawnFromTarget = drawnNumbers.length;
+            }
+        }
+
+        const mainIndex = remainingBalls.indexOf(drawnNumber);
+        remainingBalls.splice(mainIndex, 1);
+        drawnNumbers.push(drawnNumber);
+
+        const boardNum = document.getElementById(`board-num-${drawnNumber}`);
+        if (boardNum) boardNum.classList.add('drawn');
+
+        const ballSetClass = `ball-set-${Math.floor((drawnNumber - 1) / 10) % 10}`;
+
+        const centerBox = document.getElementById('mainBallCenterBox');
+        centerBox.className = `main-ball-center ${ballSetClass}`;
+
+        const rightBox = document.getElementById('mainBallRightBox');
+        rightBox.className = `main-ball-right ${ballSetClass}`;
+
+        document.getElementById('ballsDrawnCount').innerText = drawnNumbers.length;
+        document.getElementById('mainBallCenterDisplay').innerText = drawnNumber;
+        document.getElementById('mainBallRightDisplay').innerText = drawnNumber;
+
+        const historyRow = document.getElementById('historyBallsRow');
+        const historyBall = document.createElement('div');
+        historyBall.className = `history-ball ball-set-${Math.floor((drawnNumber - 1) / 10) % 10}`;
+        historyBall.innerHTML = `<div class="history-ball-inner">${drawnNumber}</div>`;
+        historyRow.appendChild(historyBall);
+        if (historyRow.children.length > 6) historyRow.removeChild(historyRow.firstChild);
+
+        const index = activeBalls.findIndex(b => b.num === drawnNumber);
+        if (index !== -1) {
+            activeBalls[index].remove();
+            activeBalls.splice(index, 1);
+        }
+        isAnimating = false;
+    }
+</script>
+</body>
+</html>
